@@ -1,13 +1,21 @@
+import React from 'react';
+import P from 'prop-types';
+
 import './styles.css';
 
-export const TextInput = ({ searchValeu, hendleChange }) => {
-    return(
-        <input
-        placeholder="Digite sua pesquisa..."
-        className="text-input" 
-        onChange={hendleChange}
-        value={searchValeu}
-        type="search" 
-        />
-    )
-}
+const TextInput = ({ searchValeu, hendleChange }) => (
+  <input
+    placeholder="Digite sua pesquisa..."
+    className="text-input"
+    onChange={hendleChange}
+    value={searchValeu}
+    type="search"
+  />
+);
+
+TextInput.propTypes = {
+  searchValeu: P.string.isRequired,
+  hendleChange: P.func.isRequired,
+};
+
+export default TextInput;

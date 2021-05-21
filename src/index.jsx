@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 
 import './styles/global.css';
 
-
-import Home from './templates/Home/index'
+import Home from './templates/Home/index';
 
 ReactDOM.render(
   <React.StrictMode>
     <Home />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
