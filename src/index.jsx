@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './styles/global.css';
 
 
-import Home from '../src/templates/Home/index'
+import Home from './templates/Home/index'
 
 ReactDOM.render(
   <React.StrictMode>
